@@ -3,11 +3,13 @@ import ListItems from './ListItems';
 
  const List = ({listx}) =>{
   return(
-    // code here
-    
-      <ListItems  />
-    
-    
+        // code here
+        <>
+          <ul>
+          {listx.map((list) => (<li><ListItems valuex = {list}/></li>))}
+          </ul>
+          
+        </>
   )
 }
 
