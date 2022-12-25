@@ -6,7 +6,9 @@ import ListItems from './ListItems';
         // code here
         <>
           <ul>
-          {listx.map((list) => (<li><ListItems valuex = {list}/></li>))}
+            <li id="list" className='items'>
+              {listx.map((list) => (<ListItems valuex = {list}/>))}
+            </li>
           </ul>
           
         </>
